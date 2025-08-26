@@ -15,7 +15,7 @@ export default function Dashboard() {
         <SidebarInset className="flex-1 flex flex-col overflow-hidden">
           {/* Hero Section */}
           <div className="relative h-48 md:h-64 bg-gradient-hero overflow-hidden">
-            <div 
+            <div
               className="absolute inset-0 bg-cover bg-center opacity-20"
               style={{ backgroundImage: `url(${heroImage})` }}
             />
@@ -25,7 +25,8 @@ export default function Dashboard() {
                   Hospital Management System
                 </h1>
                 <p className="text-sm md:text-xl opacity-90 max-w-2xl">
-                  Streamline your healthcare operations with our comprehensive management platform
+                  Streamline your healthcare operations with our comprehensive
+                  management platform
                 </p>
               </div>
             </div>
@@ -61,16 +62,28 @@ export default function Dashboard() {
                 <CardContent>
                   <div className="space-y-3">
                     <div className="flex items-center justify-between">
-                      <span className="text-sm text-muted-foreground">Server Status</span>
-                      <span className="text-sm text-medical-success font-medium">Online</span>
+                      <span className="text-sm text-muted-foreground">
+                        Server Status
+                      </span>
+                      <span className="text-sm text-medical-success font-medium">
+                        Online
+                      </span>
                     </div>
                     <div className="flex items-center justify-between">
-                      <span className="text-sm text-muted-foreground">Database</span>
-                      <span className="text-sm text-medical-success font-medium">Connected</span>
+                      <span className="text-sm text-muted-foreground">
+                        Database
+                      </span>
+                      <span className="text-sm text-medical-success font-medium">
+                        Connected
+                      </span>
                     </div>
                     <div className="flex items-center justify-between">
-                      <span className="text-sm text-muted-foreground">Backup Status</span>
-                      <span className="text-sm text-medical-warning font-medium">Scheduled</span>
+                      <span className="text-sm text-muted-foreground">
+                        Backup Status
+                      </span>
+                      <span className="text-sm text-medical-warning font-medium">
+                        Scheduled
+                      </span>
                     </div>
                   </div>
                 </CardContent>
@@ -86,16 +99,28 @@ export default function Dashboard() {
                 <CardContent>
                   <div className="space-y-3">
                     <div className="flex items-center justify-between">
-                      <span className="text-sm text-muted-foreground">Patient Satisfaction</span>
-                      <span className="text-sm text-medical-success font-medium">94.2%</span>
+                      <span className="text-sm text-muted-foreground">
+                        Patient Satisfaction
+                      </span>
+                      <span className="text-sm text-medical-success font-medium">
+                        94.2%
+                      </span>
                     </div>
                     <div className="flex items-center justify-between">
-                      <span className="text-sm text-muted-foreground">Average Wait Time</span>
-                      <span className="text-sm text-foreground font-medium">12 min</span>
+                      <span className="text-sm text-muted-foreground">
+                        Average Wait Time
+                      </span>
+                      <span className="text-sm text-foreground font-medium">
+                        12 min
+                      </span>
                     </div>
                     <div className="flex items-center justify-between">
-                      <span className="text-sm text-muted-foreground">Bed Occupancy</span>
-                      <span className="text-sm text-medical-warning font-medium">78%</span>
+                      <span className="text-sm text-muted-foreground">
+                        Bed Occupancy
+                      </span>
+                      <span className="text-sm text-medical-warning font-medium">
+                        78%
+                      </span>
                     </div>
                   </div>
                 </CardContent>

@@ -1,15 +1,15 @@
 import { useState } from "react";
-import { 
-  Calendar, 
-  Users, 
-  UserCheck, 
-  FileText, 
-  Activity, 
-  Settings, 
+import {
+  Calendar,
+  Users,
+  UserCheck,
+  FileText,
+  Activity,
+  Settings,
   Home,
   Stethoscope,
   ClipboardList,
-  TrendingUp
+  TrendingUp,
 } from "lucide-react";
 import { NavLink, useLocation } from "react-router-dom";
 import {
@@ -51,15 +51,13 @@ export function HospitalSidebar() {
     return currentPath.startsWith(path);
   };
 
-  const getNavCls = (path: string) => 
-    isActive(path) 
-      ? "bg-medical-primary text-white shadow-soft" 
+  const getNavCls = (path: string) =>
+    isActive(path)
+      ? "bg-medical-primary text-white shadow-soft"
       : "hover:bg-secondary/50 text-foreground";
 
   return (
-    <Sidebar
-      collapsible="icon"
-    >
+    <Sidebar collapsible="icon">
       <SidebarContent className="bg-card border-r">
         {/* Hospital Header */}
         <div className="p-4 border-b">
@@ -69,7 +67,7 @@ export function HospitalSidebar() {
             </div>
             {!collapsed && (
               <div>
-                <h2 className="font-bold text-lg text-foreground">MediCare</h2>
+                <h2 className="font-bold text-lg text-foreground">VitalSynq</h2>
                 <p className="text-sm text-muted-foreground">Hospital System</p>
               </div>
             )}
@@ -86,13 +84,17 @@ export function HospitalSidebar() {
               {mainItems.map((item) => (
                 <SidebarMenuItem key={item.title}>
                   <SidebarMenuButton asChild>
-                    <NavLink 
-                      to={item.url} 
+                    <NavLink
+                      to={item.url}
                       end={item.url === "/"}
-                      className={`flex items-center space-x-3 px-3 py-2 rounded-lg transition-colors ${getNavCls(item.url)}`}
+                      className={`flex items-center space-x-3 px-3 py-2 rounded-lg transition-colors ${getNavCls(
+                        item.url
+                      )}`}
                     >
                       <item.icon className="h-5 w-5 flex-shrink-0" />
-                      {!collapsed && <span className="font-medium">{item.title}</span>}
+                      {!collapsed && (
+                        <span className="font-medium">{item.title}</span>
+                      )}
                     </NavLink>
                   </SidebarMenuButton>
                 </SidebarMenuItem>
@@ -111,12 +113,16 @@ export function HospitalSidebar() {
               {managementItems.map((item) => (
                 <SidebarMenuItem key={item.title}>
                   <SidebarMenuButton asChild>
-                    <NavLink 
+                    <NavLink
                       to={item.url}
-                      className={`flex items-center space-x-3 px-3 py-2 rounded-lg transition-colors ${getNavCls(item.url)}`}
+                      className={`flex items-center space-x-3 px-3 py-2 rounded-lg transition-colors ${getNavCls(
+                        item.url
+                      )}`}
                     >
                       <item.icon className="h-5 w-5 flex-shrink-0" />
-                      {!collapsed && <span className="font-medium">{item.title}</span>}
+                      {!collapsed && (
+                        <span className="font-medium">{item.title}</span>
+                      )}
                     </NavLink>
                   </SidebarMenuButton>
                 </SidebarMenuItem>
@@ -128,9 +134,11 @@ export function HospitalSidebar() {
         {/* Settings */}
         <div className="mt-auto p-4 border-t">
           <SidebarMenuButton asChild>
-            <NavLink 
+            <NavLink
               to="/settings"
-              className={`flex items-center space-x-3 px-3 py-2 rounded-lg transition-colors ${getNavCls("/settings")}`}
+              className={`flex items-center space-x-3 px-3 py-2 rounded-lg transition-colors ${getNavCls(
+                "/settings"
+              )}`}
             >
               <Settings className="h-5 w-5 flex-shrink-0" />
               {!collapsed && <span className="font-medium">Settings</span>}

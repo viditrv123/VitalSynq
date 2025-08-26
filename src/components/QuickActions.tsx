@@ -1,6 +1,12 @@
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
-import { Plus, UserPlus, Calendar, FileText, AlertTriangle } from "lucide-react";
+import {
+  Plus,
+  UserPlus,
+  Calendar,
+  FileText,
+  AlertTriangle,
+} from "lucide-react";
 
 const actions = [
   {
@@ -8,29 +14,29 @@ const actions = [
     description: "Register a new patient",
     icon: UserPlus,
     variant: "default" as const,
-    onClick: () => console.log("Add patient")
+    onClick: () => console.log("Add patient"),
   },
   {
     title: "Schedule Appointment",
     description: "Book an appointment",
     icon: Calendar,
     variant: "secondary" as const,
-    onClick: () => console.log("Schedule appointment")
+    onClick: () => console.log("Schedule appointment"),
   },
   {
     title: "Create Record",
     description: "New medical record",
     icon: FileText,
     variant: "outline" as const,
-    onClick: () => console.log("Create record")
+    onClick: () => console.log("Create record"),
   },
   {
     title: "Emergency Alert",
     description: "Report emergency case",
     icon: AlertTriangle,
     variant: "destructive" as const,
-    onClick: () => console.log("Emergency alert")
-  }
+    onClick: () => console.log("Emergency alert"),
+  },
 ];
 
 export function QuickActions() {
