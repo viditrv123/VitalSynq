@@ -104,7 +104,7 @@ export function RecentAppointments() {
           <Input className="max-w-96" placeholder="Search..." />
         </div>
       </CardHeader>
-      <CardContent className="space-y-4 h-52 overflow-y-auto">
+      <CardContent className="space-y-4 h-72 overflow-y-auto">
         {appointments.map((appointment) => (
           <div
             key={appointment.id}

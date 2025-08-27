@@ -17,7 +17,7 @@ All colors MUST be HSL.
     --popover: 0 0% 100%;
     --popover-foreground: 213 31% 13%;
 
-    --primary: 213 94% 68%;
+    --primary: 338, 100%, 50%;
     --primary-foreground: 0 0% 100%;
 
     --secondary: 213 27% 84%;
@@ -34,24 +34,38 @@ All colors MUST be HSL.
 
     --border: 213 27% 89%;
     --input: 213 27% 89%;
-    --ring: 213 94% 68%;
+    --ring: 338, 100%, 50%;
 
     /* Medical theme colors */
-    --medical-primary: 213 94% 68%;
+    --medical-primary: 338, 100%, 50%;
     --medical-secondary: 159 75% 85%;
     --medical-accent: 213 27% 84%;
     --medical-success: 159 61% 51%;
     --medical-warning: 43 96% 56%;
     --medical-emergency: 0 72% 51%;
-    
+
     /* Gradients */
-    --gradient-primary: linear-gradient(135deg, hsl(213 94% 68%), hsl(213 94% 78%));
-    --gradient-secondary: linear-gradient(135deg, hsl(159 75% 85%), hsl(159 75% 90%));
-    --gradient-hero: linear-gradient(135deg, hsl(213 94% 68%), hsl(213 84% 58%));
-    
+    --gradient-primary: linear-gradient(
+      135deg,
+      hsl(338, 100%, 50%),
+      hsl(338, 92%, 69%)
+    );
+    --gradient-secondary: linear-gradient(
+      135deg,
+      hsl(159 75% 85%),
+      hsl(159 75% 90%)
+    );
+    --gradient-hero: linear-gradient(
+      135deg,
+      hsl(338, 100%, 50%),
+      hsl(338, 92%, 69%)
+    );
+
     /* Shadows */
-    --shadow-soft: 0 4px 6px -1px hsl(213 94% 68% / 0.1), 0 2px 4px -1px hsl(213 94% 68% / 0.06);
-    --shadow-medical: 0 10px 25px -3px hsl(213 94% 68% / 0.15), 0 4px 6px -2px hsl(213 94% 68% / 0.05);
+    --shadow-soft: 0 4px 6px -1px hsl(338, 100%, 50% / 0.1),
+      0 2px 4px -1px hsl(338, 100%, 50% / 0.06);
+    --shadow-medical: 0 10px 25px -3px hsl(338, 100%, 50% / 0.15),
+      0 4px 6px -2px hsl(338, 100%, 50% / 0.05);
 
     --radius: 0.5rem;
 

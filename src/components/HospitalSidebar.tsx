@@ -33,6 +33,8 @@ const mainItems = [
   { title: "Medical Records", url: "/records", icon: FileText },
 ];
 
+import logo from "../assets/logo.png";
+
 const managementItems = [
   { title: "Departments", url: "/departments", icon: Stethoscope },
   { title: "Inventory", url: "/inventory", icon: ClipboardList },
@@ -62,13 +64,15 @@ export function HospitalSidebar() {
         {/* Hospital Header */}
         <div className="p-4 border-b">
           <div className="flex items-center space-x-3">
-            <div className="bg-gradient-primary rounded-lg p-2">
-              <Stethoscope className="h-6 w-6 text-white" />
+            <div className=" flex-shrink-0 rounded-lg p-2">
+              <img src={logo} className="size-24 flex-shrink-0" />
             </div>
             {!collapsed && (
               <div>
-                <h2 className="font-bold text-lg text-foreground">VitalSynq</h2>
-                <p className="text-sm text-muted-foreground">Hospital System</p>
+                <p className="font-bold text-wrap text-sm text-muted-foreground">
+                  King George Medical University
+                </p>
+                <h2 className="font-bold text-lg text-primary">(VitalSynq)</h2>
               </div>
             )}
           </div>

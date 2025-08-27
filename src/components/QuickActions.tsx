@@ -48,7 +48,7 @@ export function QuickActions() {
           <span>Quick Actions</span>
         </CardTitle>
       </CardHeader>
-      <CardContent className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+      <CardContent className="grid grid-cols-1 sm:grid-cols-2 gap-4 h-72">
         {actions.map((action, index) => (
           <Button
             key={index}
@@ -58,9 +58,11 @@ export function QuickActions() {
           >
             <div className="flex items-center space-x-2 w-full">
               <action.icon className="h-5 w-5" />
-              <span className="font-medium">{action.title}</span>
+              <span className="text-wrap font-medium">{action.title}</span>
             </div>
-            <span className="text-sm opacity-90">{action.description}</span>
+            <span className="text-wrap text-sm opacity-90">
+              {action.description}
+            </span>
           </Button>
         ))}
       </CardContent>
