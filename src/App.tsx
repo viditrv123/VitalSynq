@@ -28,7 +28,7 @@ const PrivateRoute = ({ children }) => {
 
 // Public route wrapper (like onboarding, login etc.)
 const PublicRoute = ({ children }) => {
-  return !isAuthenticated() ? children : <Navigate to="/onboarding" replace />;
+  return !isAuthenticated() ? children : <Navigate to="/" replace />;
 };
 
 const App = () => (
